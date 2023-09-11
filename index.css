@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box ;
+    
+}
+body{
+    margin: 0;
+    margin-top: 0;
+    font-family:'Roboto', sans-serif;
+    color: #000000;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+button{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    color: #fff;
+    background-color: rgb(245, 110, 26);
+    box-shadow: 2px 2px 12px #000;
+}
+button:hover{
+    background-color: rgb(202, 86, 14);
+}
+a{color: rgb(245, 110, 26);}
+
+.container{
+    max-width:1100px;
+    margin: auto;
+}
+.color-acento{
+    color: rgb(245,110,26);
+}
+header{
+    background-color:rgb(245, 245, 245);
+}
+
+header p {
+    margin: 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: rgb(245, 110, 26);
+    font-size: 1.67em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 15px;  
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+header a:hover{
+    color:rgb(245, 110, 26) ;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 92vh ;
+    color: #fff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+     )
+    ,url("hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#somos-papizza .container{
+    text-align: center;
+    padding: 200px 15px;
+    background-color: rgb(245, 245, 245);
+}
+#variedades {
+    background-color: rgb(25, 25, 25) ;
+    text-align: center;
+    color: rgb(270, 270, 270);
+}
+#variedades .container {
+    padding: 150px 12px;
+    
+}
+#variedades h2{
+    margin-top: -50px;
+    font-size: 3em;
+}
+#variedades h3{
+    font-size: 1.5em;
+    padding: 20px 0px 0px 0px;
+}
+#variedades p {
+    display: none;
+}
+#variedades .tipos{
+    padding-bottom: 20px;
+    margin: 17px;
+    border-radius: 15px;
+}
+
+
+.tipos:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+     )
+    ,url(personaliza.jpg);
+    background-position: center center;
+background-size: cover;
+}
+.tipos:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+     )
+    ,url(clasica.jpg);
+    background-position: center center; 
+background-size: cover;
+}
+.tipos:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+     )
+    ,url(ruleta.jpg);
+    background-position: center center;  
+background-size: cover;      
+}
+
+
+#que-nos-diferencia .container{
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 200px 12px;
+}
+#que-nos-diferencia h2{
+    margin-top:0px ;
+    padding-top: 20px;
+}
+#que-nos-diferencia li{
+    margin: 10px 0px;
+    font-weight: bold;
+    color:  rgb(245, 110, 26);
+    padding: 15px 0px;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+     )
+    ,url("final.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 92vh;
+}
+footer{
+    background-color:rgb(245, 245, 245);
+}
+footer p {
+    margin: 0;
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+}
+footer .container{
+    height: 20px;
+    display:flex;
+    justify-content: right;  
+}
+
+@media (min-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 15px;
+    
+    }
+    #somos-papizza .img-container{
+        background-image:url(somos-papizza.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 350px;
+
+    }
+    #hero h1{
+        font-size: 4.5em;
+    }
+    #somos-papizza .container{
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        
+        
+    }
+    #somos-papizza .texto {
+        width: 50%;
+        text-align: initial;
+        padding: 0px 27px;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #somos-papizza h2{
+        margin: 0;
+    }
+}
